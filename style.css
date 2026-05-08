@@ -1,0 +1,233 @@
+/* Global Styles */
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  color: #ffffff;
+  font-family: 'Cascadia Mono', sans-serif;
+  font-weight: 400;
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+/* Background Image Effect */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('https://images.steamusercontent.com/ugc/854982873548578201/71FD4FCEBAE802629176B314D87D719FE740A788/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* Typography */
+p,
+h1 {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Headings Styles */
+h1 {
+  font-size: 36px;
+  color: #ef70a5; /* Cyan glow color */
+  text-shadow:
+    0 0 10px #f086b3,
+    0 0 20px #dabfca;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 16px;
+  color: #e0e0e0; /* Slightly lighter for readability */
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 0 15px;
+  text-align: justify;
+  transition: color 0.3s ease;
+}
+
+/* Links */
+a {
+  color: #00e5ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #ff66ff;
+  text-shadow: 0 0 8px #fa57fa;
+}
+
+/* Image Styles */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.6);
+}
+
+/* Section Styling */
+section,
+div {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(
+    255,
+    236,
+    236,
+    0.314
+  ); /* Semi-transparent background */
+  border-radius: 8px;
+}
+
+section h2 {
+  font-size: 28px;
+  color: #ff4dff; /* Purple theme for subheadings */
+  text-shadow: 0 0 8px #ff4dff;
+  margin-top: 20px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ff00bf, transparent);
+  margin: 40px 0;
+}
+
+/* Global Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply fade-in effect */
+* {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+ul#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #000000;
+}
+#miku-miku-beem {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+body {
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+          margin: 0;
+          padding: 0;
+          color: #333;
+        }
+        header {
+          background-color: #f7bfd7;
+          padding: 20px;
+          text-align: center;
+          font-size: 32px;
+          color: #fff;
+        }
+        nav {
+          background-color: #f086b3;
+          padding: 10px;
+          text-align: center;
+        }
+        nav a {
+          margin: 0 15px;
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+        }
+        nav a:hover {
+          text-decoration: underline;
+        }
+        .container {
+          width: 85%;
+          margin: 20px auto;
+        }
+        .group-description {
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        }
+        .group-description h2 {
+          color: #ffd1c8;
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+        .group-description p {
+          font-size: 18px;
+          line-height: 1.6;
+        }
+        .groups {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+        .group {
+          width: 30%;
+          text-align: center;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .group img {
+          width: 100%;
+          border-radius: 10px;
+        }
+        footer {
+          background-color: #333;
+          color: white;
+          padding: 15px;
+          text-align: center;
+        }
